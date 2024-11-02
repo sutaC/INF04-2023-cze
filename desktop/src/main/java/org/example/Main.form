@@ -1,0 +1,158 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="org.example.Main">
+  <grid id="27dc6" binding="Root" layout-manager="GridLayoutManager" row-count="4" column-count="3" same-size-horizontally="false" same-size-vertically="false" hgap="20" vgap="10">
+    <margin top="10" left="20" bottom="10" right="20"/>
+    <constraints>
+      <xy x="20" y="20" width="500" height="400"/>
+    </constraints>
+    <properties/>
+    <border type="none"/>
+    <children>
+      <grid id="80477" binding="panRadio" layout-manager="GridLayoutManager" row-count="3" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none" title="Rodzaj paczki"/>
+        <children>
+          <component id="1a4f6" class="javax.swing.JRadioButton" binding="rbPostcard">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Pocztówka"/>
+            </properties>
+          </component>
+          <component id="c58fc" class="javax.swing.JRadioButton" binding="rbLetter">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <selected value="true"/>
+              <text value="List"/>
+            </properties>
+          </component>
+          <component id="25b29" class="javax.swing.JRadioButton" binding="rbPackage">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <text value="Paczka"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="3d9e9" class="javax.swing.JButton" binding="btnPrice">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="2" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Sprawdź cenę"/>
+        </properties>
+      </component>
+      <component id="58a7d" class="javax.swing.JLabel" binding="labOptionImage">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <icon value="list.png"/>
+          <text value=""/>
+        </properties>
+      </component>
+      <component id="c271c" class="javax.swing.JLabel" binding="labPrice">
+        <constraints>
+          <grid row="2" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false">
+            <minimum-size width="75" height="-1"/>
+          </grid>
+        </constraints>
+        <properties>
+          <text value="Cena: 1,5 zł"/>
+        </properties>
+      </component>
+      <grid id="4836d" binding="panForm" layout-manager="GridLayoutManager" row-count="6" column-count="1" same-size-horizontally="false" same-size-vertically="false" hgap="-1" vgap="-1">
+        <margin top="0" left="0" bottom="0" right="0"/>
+        <constraints>
+          <grid row="0" column="2" row-span="3" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none" title="Dane adresowe"/>
+        <children>
+          <component id="dde9d" class="javax.swing.JLabel" binding="labAddress">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <labelFor value="5489a"/>
+              <text value="Ulica z numerem"/>
+            </properties>
+          </component>
+          <component id="5489a" class="javax.swing.JTextField" binding="tfAddress">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="10"/>
+            </properties>
+          </component>
+          <component id="d0283" class="javax.swing.JTextField" binding="tfZipCode">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="10"/>
+            </properties>
+          </component>
+          <component id="3d9bf" class="javax.swing.JTextField" binding="tfCity">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="8" fill="1" indent="0" use-parent-layout="false">
+                <preferred-size width="150" height="-1"/>
+              </grid>
+            </constraints>
+            <properties>
+              <horizontalAlignment value="10"/>
+            </properties>
+          </component>
+          <component id="1bb50" class="javax.swing.JLabel" binding="labZipCode">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <labelFor value="d0283"/>
+              <text value="Kod pocztowy"/>
+            </properties>
+          </component>
+          <component id="c730b" class="javax.swing.JLabel" binding="labCity">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+            </constraints>
+            <properties>
+              <labelFor value="3d9bf"/>
+              <text value="Miasto"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="96cdc" class="javax.swing.JButton" binding="btnConfirm">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="3" vsize-policy="0" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties>
+          <text value="Zatwiedź"/>
+        </properties>
+      </component>
+    </children>
+  </grid>
+  <buttonGroups>
+    <group name="Option">
+      <member id="1a4f6"/>
+      <member id="1a4f6"/>
+      <member id="c58fc"/>
+      <member id="25b29"/>
+    </group>
+  </buttonGroups>
+</form>
